@@ -1,0 +1,28 @@
+//ARCHIVOS EDITADOS PARA DESAFIO DE CURSO SPRING
+//ALBERTO BARRAGAN ESPINOSA
+//USO DE SWAGGER
+//Controller comentado - specialty-controller
+
+1// Creacion de clase OpenAPIConfig en package com.tlaxcala.config
+2// Agregado propiedades de configuracion para OpenAPI de SWAGGER application.properties
+3// Agregado de dependencias en el archivo pom.xml del proyecto para integracion de SWAGGER - OpenApi y DEVTOOLS
+4// Modificacion de la clase de configuracion package WebSecurityConfig en package com.tlaxcala.security,
+    para agregar rutas de la herramienta SWAGGER para que estas no sean restringidas por Spring Security 
+    en el metodo filterChain.
+5// Se agragaron comentarios de SWAGER para el servicio de login y se agrego la excepcion a la ausencia 
+    del usuario (respuesta 401).
+6// Se agragaron comentarios de SWAGER para los servicios del CRUD perteneciente a specialty-controller.
+7// Modificacion de la clase principal MediappBackend para permitir inicio de sesion y ejecutar los 
+    servicios REST que requieran uso de token (uso de decorador @SecurityScheme)
+Nota: Todos los codigos de respuesta son tomados en base a la ejecucion directa de las peticiones usando
+      la herramienta Postman y que esta proporciona como resultado del consumo del servicio.
+
+//RUTA DEl API-DOCS de SWAGGER
+//http://localhost:8080/v3/api-docs
+
+//RUTA DE UI SWAGGER OpenAPI
+//http://localhost:8080/swagger-ui/index.html?continue
+
+//RUTA PARA UI redireccionada desde la clase SwaggerController que apunta a ''RUTA DE UI SWAGGER OpenAPI'' antes mencionada
+//http://localhost:8080/
+//http://localhost:8080
